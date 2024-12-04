@@ -1,0 +1,305 @@
+{
+    "logoPosition": "right",
+    "pages": [
+      {
+        "name": "page1",
+        "elements": [
+          {
+            "type": "text",
+            "name": "Reporting date",
+            "title": "Reporting Date",
+            "inputType": "date"
+          },
+          {
+            "type": "text",
+            "name": "Staff name",
+            "title": "Staff name",
+            "isRequired": true
+          },
+          {
+            "type": "dropdown",
+            "name": "State",
+            "title": "State",
+            "isRequired": true,
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Province No.1"
+              },
+              {
+                "value": "Item 2",
+                "text": "Madesh Province"
+              },
+              {
+                "value": "Item 3",
+                "text": "Bagmati Province"
+              },
+              {
+                "value": "Item 4",
+                "text": "Gandaki Province"
+              },
+              {
+                "value": "Item 5",
+                "text": "Lumbini Province"
+              },
+              {
+                "value": "Item 6",
+                "text": "Karnali Province"
+              },
+              {
+                "value": "Item 7",
+                "text": "Sudurpaschim Province"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "Province1Districts",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 1'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Bhojpur",
+              "Dhankuta",
+              "Ilam",
+              "Jhapa",
+              "Khotang",
+              "Morang",
+              "Okhaldhunga",
+              "Panchthar",
+              "Sankhuwasabha",
+              "Solukhumbu",
+              "Sunsari",
+              "Taplejung",
+              "Terhathum",
+              "Udayapur"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "MadeshProvinceDistricts",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 2'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Bara",
+              "Dhanusha",
+              "Mahottari",
+              "Parsa",
+              "Rautahat",
+              "Saptari",
+              "Sarlahi",
+              "Siraha"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "BagmatiProvinceDistrict",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 3'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Bhaktapur",
+              "Chitwan",
+              "Dhading",
+              "Dolakha",
+              "Kathmandu",
+              "Kavrepalanchok",
+              "Lalitpur",
+              "Makwanpur",
+              "Nuwakot",
+              "Ramechhap",
+              "Rasuwa",
+              "Sindhuli",
+              "Sindhupalchok"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "GandakiProvinceDistrict",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 4'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Baglung",
+              "Gorkha",
+              "Kaski",
+              "Lamjung",
+              "Manang",
+              "Mustang",
+              "Myagdi",
+              "Nawalpur",
+              "Parbat",
+              "Syangja",
+              "Tanahun"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "LumbiniProvinceDistrict",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 5'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Arghakhanchi",
+              "Banke",
+              "Bardiya",
+              "Dang",
+              "Gulmi",
+              "Kapilvastu",
+              "Parasi (Nawalparasi West)",
+              "Palpa",
+              "Pyuthan",
+              "Rolpa",
+              "Rukum East",
+              "Rupandehi"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "KarnaliProvinceDistrict",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 6'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Dailekh",
+              "Dolpa",
+              "Humla",
+              "Jajarkot",
+              "Jumla",
+              "Kalikot",
+              "Mugu",
+              "Rukum West",
+              "Salyan",
+              "Surkhet"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "SudurpaschimProvinceDistrict",
+            "visible": false,
+            "visibleIf": "{State} = 'Item 7'",
+            "title": "District",
+            "isRequired": true,
+            "choices": [
+              "Achham",
+              "Baitadi",
+              "Bajhang",
+              "Bajura",
+              "Dadeldhura",
+              "Darchula",
+              "Doti",
+              "Kailali",
+              "Kanchanpur"
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "Block",
+            "visibleIf": "{BagmatiProvinceDistrict} notempty or {GandakiProvinceDistrict} notempty or {KarnaliProvinceDistrict} notempty or {LumbiniProvinceDistrict} notempty or {MadeshProvinceDistricts} notempty or {Province1Districts} notempty",
+            "title": "Block",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Block 1"
+              },
+              {
+                "value": "Item 2",
+                "text": "Block 2"
+              },
+              {
+                "value": "Item 3",
+                "text": "Block 3"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "Cluster",
+            "visible": false,
+            "visibleIf": "{Block} notempty",
+            "title": "Cluster",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Cluster 1"
+              },
+              {
+                "value": "Item 2",
+                "text": "Cluster 2"
+              },
+              {
+                "value": "Item 3",
+                "text": "Cluster 3"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "GP",
+            "visibleIf": "{Block} notempty",
+            "title": "GP",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "GP1"
+              },
+              {
+                "value": "Item 2",
+                "text": "GP2"
+              },
+              {
+                "value": "Item 3",
+                "text": "GP3"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "Village",
+            "visibleIf": "{GP} notempty",
+            "title": "Village"
+          },
+          {
+            "type": "text",
+            "name": "Habitation",
+            "visibleIf": "{Village} notempty",
+            "title": "Habitation"
+          },
+          {
+            "type": "text",
+            "name": "question1",
+            "title": "Academic Year",
+            "inputType": "date"
+          },
+          {
+            "type": "text",
+            "name": "School",
+            "visibleIf": "{GP} notempty",
+            "title": "School Name"
+          },
+          {
+            "type": "dropdown",
+            "name": "question2",
+            "title": "Assesment Type",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Baseline"
+              },
+              {
+                "value": "Item 2",
+                "text": "Endline"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

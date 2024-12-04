@@ -1,0 +1,1002 @@
+{
+    "title": "HH Survey Odapada",
+    "description": "Household Survey Questionnaire for the Odapada Block of Odisha State",
+    "logoPosition": "right",
+    "pages": [
+      {
+        "name": "page1",
+        "title": "Section A: General Information",
+        "description": "\n",
+        "elements": [
+          {
+            "type": "text",
+            "name": "H0",
+            "title": "Date of interview",
+            "inputType": "date"
+          },
+          {
+            "type": "text",
+            "name": "H1",
+            "title": "Interview start time",
+            "inputType": "time"
+          },
+          {
+            "type": "dropdown",
+            "name": "H2",
+            "title": "Select block",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Block 1"
+              },
+              {
+                "value": "Item 2",
+                "text": "Block 2"
+              },
+              {
+                "value": "Item 3",
+                "text": "Block 3"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H3",
+            "title": "Select gram panchayat",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "GP 1"
+              },
+              {
+                "value": "Item 2",
+                "text": "GP 2"
+              },
+              {
+                "value": "Item 3",
+                "text": "GP 3"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H4",
+            "title": "Select village habitation",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "habitation 1"
+              },
+              {
+                "value": "Item 2",
+                "text": "habitation 2"
+              },
+              {
+                "value": "Item 3",
+                "text": "habitation 3"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "H5",
+            "title": "HHUID"
+          },
+          {
+            "type": "text",
+            "name": "H6",
+            "title": "First Name of Respondent"
+          },
+          {
+            "type": "text",
+            "name": "H7",
+            "title": "Middle and Last name of Respondent"
+          },
+          {
+            "type": "dropdown",
+            "name": "H8",
+            "title": "Relation of respondent to Head of the household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Self"
+              },
+              {
+                "value": "Item 2",
+                "text": "Wife"
+              },
+              {
+                "value": "Item 3",
+                "text": "Husband"
+              },
+              {
+                "value": "Item 4",
+                "text": "Son"
+              },
+              {
+                "value": "Item 5",
+                "text": "Daughter"
+              },
+              {
+                "value": "Item 6",
+                "text": "Father"
+              },
+              {
+                "value": "Item 7",
+                "text": "Mother"
+              },
+              {
+                "value": "Item 8",
+                "text": "Grandson"
+              },
+              {
+                "value": "Item 9",
+                "text": "Granddaughter"
+              },
+              {
+                "value": "Item 10",
+                "text": "Grandfather"
+              },
+              {
+                "value": "Item 11",
+                "text": "Grandmother"
+              },
+              {
+                "value": "Item 12",
+                "text": "Brother"
+              },
+              {
+                "value": "Item 13",
+                "text": "Sister"
+              },
+              {
+                "value": "Item 14",
+                "text": "Nephew"
+              },
+              {
+                "value": "Item 15",
+                "text": "Niece"
+              },
+              {
+                "value": "Item 16",
+                "text": "Father-in-law"
+              },
+              {
+                "value": "Item 17",
+                "text": "Mother-in-law"
+              },
+              {
+                "value": "Item 18",
+                "text": "Daghter-in-law"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H9",
+            "title": "Does the respondent have a phone number?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No/Not available"
+              },
+              {
+                "value": "Item 3",
+                "text": "Don't Know"
+              },
+              {
+                "value": "Item 4",
+                "text": "Refused"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "H10",
+            "title": "Respondent's phone number",
+            "inputType": "number"
+          },
+          {
+            "type": "dropdown",
+            "name": "H11",
+            "title": "Respondent's gender",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Male"
+              },
+              {
+                "value": "Item 2",
+                "text": "Female"
+              },
+              {
+                "value": "Item 3",
+                "text": "Others"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "H12",
+            "visibleIf": "{H8} <> 'Item 1'",
+            "title": "First name of the head of the household"
+          },
+          {
+            "type": "text",
+            "name": "H13",
+            "visibleIf": "{H8} <> 'Item 1'",
+            "title": "Middle and last name of the head of the household"
+          },
+          {
+            "type": "dropdown",
+            "name": "H14",
+            "visibleIf": "{H8} <> 'Item 1'",
+            "title": "Gender of the head of the household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Male"
+              },
+              {
+                "value": "Item 2",
+                "text": "Female"
+              },
+              {
+                "value": "Item 3",
+                "text": "Others"
+              }
+            ]
+          },
+          {
+            "type": "expression",
+            "name": "question2",
+            "title": "                                                    Read Conent loud and clearly                                                                                                                                                                                                                     You have been identified to act as a respondent for your household. We would like to interview you. This survey is conducted by ASPIRE and funded by Tata Steel Foundation. It will be carried out by staff from ASPIRE. The information from the survey will be used to understand the educational needs of children in your area. The information that you provide is totally confidential and will not be disclosed to third parties. Participation in the survey is voluntary and you can refuse to be interviewed. You are free to refuse to answer any question that is asked in the questionnaire."
+          },
+          {
+            "type": "dropdown",
+            "name": "H15",
+            "title": "Respondent want to continue survey",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page2",
+        "visibleIf": "{H15} = 'Item 1'",
+        "title": "Section B: Household Information",
+        "elements": [
+          {
+            "type": "dropdown",
+            "name": "H16",
+            "title": "Religion of the Head of household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Hindu"
+              },
+              {
+                "value": "Item 2",
+                "text": "Muslim"
+              },
+              {
+                "value": "Item 3",
+                "text": "Sarna"
+              },
+              {
+                "value": "Item 4",
+                "text": "Christian"
+              },
+              {
+                "value": "Item 5",
+                "text": "Sikh"
+              },
+              {
+                "value": "Item 6",
+                "text": "Jain"
+              },
+              {
+                "value": "Item 7",
+                "text": "Buddhist"
+              },
+              {
+                "value": "Item 8",
+                "text": "Don't know"
+              },
+              {
+                "value": "Item 9",
+                "text": "Refused"
+              },
+              {
+                "value": "Item 10",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H17",
+            "title": "Language usually spoken in household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Baigani"
+              },
+              {
+                "value": "Item 2",
+                "text": "Bengali"
+              },
+              {
+                "value": "Item 3",
+                "text": "Bhojpuri"
+              },
+              {
+                "value": "Item 4",
+                "text": "English"
+              },
+              {
+                "value": "Item 5",
+                "text": "Hindi"
+              },
+              {
+                "value": "Item 6",
+                "text": "Ho"
+              },
+              {
+                "value": "Item 7",
+                "text": "Juang"
+              },
+              {
+                "value": "Item 8",
+                "text": "Kharia"
+              },
+              {
+                "value": "Item 9",
+                "text": "Khondi"
+              },
+              {
+                "value": "Item 10",
+                "text": "Kortha"
+              },
+              {
+                "value": "Item 11",
+                "text": "Kuduk"
+              },
+              {
+                "value": "Item 12",
+                "text": "Kui"
+              },
+              {
+                "value": "Item 13",
+                "text": "Kurmali"
+              },
+              {
+                "value": "Item 14",
+                "text": "Maghi"
+              },
+              {
+                "value": "Item 15",
+                "text": "Mundari(Munda)"
+              },
+              {
+                "value": "Item 16",
+                "text": "Nagpuri"
+              },
+              {
+                "value": "Item 17",
+                "text": "Odia"
+              },
+              {
+                "value": "Item 18",
+                "text": "Panchpargania"
+              },
+              {
+                "value": "Item 19",
+                "text": "Sadri"
+              },
+              {
+                "value": "Item 20",
+                "text": "Santhali"
+              },
+              {
+                "value": "Item 21",
+                "text": "Turi"
+              },
+              {
+                "value": "Item 22",
+                "text": "Urdu"
+              },
+              {
+                "value": "Item 23",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H18",
+            "title": "Social category of the Head of household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "SC- Scheduled Caste"
+              },
+              {
+                "value": "Item 2",
+                "text": "ST-Scheduled Tribe"
+              },
+              {
+                "value": "Item 3",
+                "text": "OBC-Other Backward Classes"
+              },
+              {
+                "value": "Item 4",
+                "text": "General"
+              },
+              {
+                "value": "Item 5",
+                "text": "Don't Know"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H18a",
+            "title": "Select Scheduled Tribe",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Kandha"
+              },
+              {
+                "value": "Item 2",
+                "text": "Kharia"
+              },
+              {
+                "value": "Item 3",
+                "text": "Ganda"
+              },
+              {
+                "value": "Item 4",
+                "text": "Munda"
+              },
+              {
+                "value": "Item 5",
+                "text": "Saara"
+              },
+              {
+                "value": "Item 6",
+                "text": "Lodha"
+              },
+              {
+                "value": "Item 7",
+                "text": "Saora"
+              },
+              {
+                "value": "Item 8",
+                "text": "Santala"
+              },
+              {
+                "value": "Item 9",
+                "text": "Muslim ST"
+              },
+              {
+                "value": "Item 10",
+                "text": "Don't Know"
+              },
+              {
+                "value": "Item 11",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H18b",
+            "title": "Select Scheduled Caste",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Keuta"
+              },
+              {
+                "value": "Item 2",
+                "text": "Pana"
+              },
+              {
+                "value": "Item 3",
+                "text": "Dhoba"
+              },
+              {
+                "value": "Item 4",
+                "text": "Hadi"
+              },
+              {
+                "value": "Item 5",
+                "text": "Dama"
+              },
+              {
+                "value": "Item 6",
+                "text": "Tanla"
+              },
+              {
+                "value": "Item 7",
+                "text": "Kela"
+              },
+              {
+                "value": "Item 8",
+                "text": "Chamara"
+              },
+              {
+                "value": "Item 9",
+                "text": "Khadara"
+              },
+              {
+                "value": "Item 10",
+                "text": "Muslim"
+              },
+              {
+                "value": "Item 11",
+                "text": "Don't Know"
+              },
+              {
+                "value": "Item 12",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H18c",
+            "title": "Select OBC",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Gauda"
+              },
+              {
+                "value": "Item 2",
+                "text": "Chasa"
+              },
+              {
+                "value": "Item 3",
+                "text": "Gudia"
+              },
+              {
+                "value": "Item 4",
+                "text": "Teli"
+              },
+              {
+                "value": "Item 5",
+                "text": "Mali"
+              },
+              {
+                "value": "Item 6",
+                "text": "Kumbhara"
+              },
+              {
+                "value": "Item 7",
+                "text": "Kamara"
+              },
+              {
+                "value": "Item 8",
+                "text": "Tanti"
+              },
+              {
+                "value": "Item 9",
+                "text": "Jhara"
+              },
+              {
+                "value": "Item 10",
+                "text": "Girigiria"
+              },
+              {
+                "value": "Item 11",
+                "text": "Bania"
+              },
+              {
+                "value": "Item 12",
+                "text": "Bhandari"
+              },
+              {
+                "value": "Item 13",
+                "text": "Sundhi"
+              },
+              {
+                "value": "Item 14",
+                "text": "Nahaka"
+              },
+              {
+                "value": "Item 15",
+                "text": "Badhei"
+              },
+              {
+                "value": "Item 16",
+                "text": "Paika"
+              },
+              {
+                "value": "Item 17",
+                "text": "Kansari"
+              },
+              {
+                "value": "Item 19",
+                "text": "Muslim OBC"
+              },
+              {
+                "value": "Item 20",
+                "text": "Don't Know"
+              },
+              {
+                "value": "Item 21",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H19",
+            "title": "What is the type of house?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Kutcha house(no cemented wall or roof)"
+              },
+              {
+                "value": "Item 2",
+                "text": "Semi pucca house(either roof or the walls but not both is made cemented materials)"
+              },
+              {
+                "value": "Item 3",
+                "text": "Pucca house(cemented walls and roof)"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H20",
+            "title": "Cooking fuel mainly used by household",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Electricity"
+              },
+              {
+                "value": "Item 2",
+                "text": "LPG or Natural gas"
+              },
+              {
+                "value": "Item 3",
+                "text": "Kerosene"
+              },
+              {
+                "value": "Item 4",
+                "text": "Coal or Lignite"
+              },
+              {
+                "value": "Item 5",
+                "text": "Charcoal"
+              },
+              {
+                "value": "Item 6",
+                "text": "Wood"
+              },
+              {
+                "value": "Item 7",
+                "text": "Straw or Shrub or Grass"
+              },
+              {
+                "value": "Item 8",
+                "text": "Agricultural crop waste"
+              },
+              {
+                "value": "Item 9",
+                "text": "Dung Cakes"
+              },
+              {
+                "value": "Item 10",
+                "text": "Other"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H21",
+            "title": "Is there functional electricity in the house since last six month?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H22",
+            "title": "How many working smartphones are there in the household?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "No Smartphone"
+              },
+              {
+                "value": "Item 2",
+                "text": "One smartphone"
+              },
+              {
+                "value": "Item 3",
+                "text": "Two smartphone"
+              },
+              {
+                "value": "Item 4",
+                "text": "More than two smartphone"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H23",
+            "title": "Does any person of the household have access to internet via any device?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              },
+              {
+                "value": "Item 3",
+                "text": "Don't Know"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H24",
+            "title": "Do you live in your own house?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              },
+              {
+                "value": "Item 3",
+                "text": "Rented"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H25",
+            "title": "Does the household have any registered land document(patta) in their name?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              },
+              {
+                "value": "Item 3",
+                "text": "Don't Know"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H26",
+            "title": "Does the household have a Ration Card?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27a",
+            "title": "Does the household have animal cart (Bullock or Ox or Horse)?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27b",
+            "title": "Does the household have bicycle?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27c",
+            "title": "Does the household have Motorbike?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27d",
+            "title": "Does the household have Scooter/Scooty?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27e",
+            "title": "Does the household have Three-wheeler",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27f",
+            "title": "Does the household have Mini-truck?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27g",
+            "title": "Does the household have Tractor?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27h",
+            "title": "Does the household have car?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27i",
+            "title": "Does the household have Truck?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27j",
+            "title": "Does the household have cows,buffalo,goats,ox,pig,sheep?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "H27k",
+            "title": "Does the household have pigeons,hens,ducks?",
+            "choices": [
+              {
+                "value": "Item 1",
+                "text": "Yes"
+              },
+              {
+                "value": "Item 2",
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "H28",
+            "title": "Total number of household members(including all children)",
+            "inputType": "number"
+          },
+          {
+            "type": "text",
+            "name": "question3",
+            "title": "Get Geo datapoints(Lat,Long)"
+          }
+        ]
+      }
+    ]
+  }

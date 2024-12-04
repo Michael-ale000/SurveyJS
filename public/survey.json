@@ -1,0 +1,152 @@
+{
+    "title": "AI Models Survey",
+    "description": "This survey collects information on your knowledge, opinions, and experience with AI models.",
+    "logo": "https://api.surveyjs.io/private/Surveys/files?name=f9d0cf66-d0b1-446e-9272-47b787e8e6d7",
+    "logoPosition": "right",
+    "pages": [
+      {
+        "name": "general_info",
+        "elements": [
+          {
+            "type": "text",
+            "name": "participant_name",
+            "title": "What is your name?",
+            "isRequired": true
+          },
+          {
+            "type": "dropdown",
+            "name": "profession",
+            "title": "What is your profession?",
+            "isRequired": true,
+            "choices": [
+              "Student",
+              "Software Engineer",
+              "Data Scientist",
+              "Researcher",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ai_experience",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "familiarity",
+            "title": "How familiar are you with AI models?",
+            "isRequired": true,
+            "choices": [
+              "Not familiar at all",
+              "Somewhat familiar",
+              "Very familiar",
+              "Expert"
+            ]
+          },
+          {
+            "type": "checkbox",
+            "name": "used_models",
+            "title": "Which of the following AI models have you used or worked with?",
+            "choices": [
+              "GPT (e.g., ChatGPT, GPT-4)",
+              "BERT",
+              "DistilBERT",
+              "T5 (Text-to-Text Transfer Transformer)",
+              "Stable Diffusion (Image Generation)",
+              "Other"
+            ],
+            "showOtherItem": true,
+            "showNoneItem": true,
+            "showSelectAllItem": true
+          },
+          {
+            "type": "text",
+            "name": "custom_model",
+            "visibleIf": "{used_models} contains 'Other'",
+            "title": "Please specify the other AI models you have worked with."
+          }
+        ]
+      },
+      {
+        "name": "opinion",
+        "elements": [
+          {
+            "type": "rating",
+            "name": "model_effectiveness",
+            "title": "How effective do you think AI models are in solving real-world problems?",
+            "isRequired": true,
+            "autoGenerate": false,
+            "rateValues": [
+              {
+                "value": 1,
+                "text": "Not effective"
+              },
+              {
+                "value": 2,
+                "text": "Somewhat effective"
+              },
+              {
+                "value": 3,
+                "text": "Effective"
+              },
+              {
+                "value": 4,
+                "text": "Very effective"
+              },
+              {
+                "value": 5,
+                "text": "Extremely effective"
+              }
+            ]
+          },
+          {
+            "type": "comment",
+            "name": "improvements",
+            "title": "In your opinion, how can AI models be improved?"
+          }
+        ]
+      },
+      {
+        "name": "ai_ethics",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "ethics_concerns",
+            "title": "Do you think ethical concerns are being adequately addressed in AI development?",
+            "choices": [
+              "Yes, they are adequately addressed",
+              "No, more focus is needed",
+              "I'm not sure"
+            ]
+          },
+          {
+            "type": "comment",
+            "name": "ethics_suggestions",
+            "title": "Do you have any suggestions for addressing ethical concerns in AI?"
+          }
+        ]
+      },
+      {
+        "name": "future",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "future_impact",
+            "title": "What is your outlook on the future impact of AI?",
+            "choices": [
+              "Very positive",
+              "Somewhat positive",
+              "Neutral",
+              "Somewhat negative",
+              "Very negative"
+            ]
+          },
+          {
+            "type": "comment",
+            "name": "future_opinion",
+            "title": "What do you think will be the most significant change AI will bring in the next 10 years?"
+          }
+        ]
+      }
+    ]
+  }
